@@ -1,0 +1,223 @@
+body {
+    font-family: 'Courier New', Courier, monospace, Fraktur;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #54229b;
+    color: #000000;
+    transition: background-color 0.5s, color 0.5s;
+  }
+  
+  header {
+    display: flex;                    /* flexbox works great for centering content */
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    height: 200px;                    /* fixed height for header */
+    color: rgb(255, 255, 255);
+    position: relative;
+  
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                url('images/background2.jpg') no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+  }
+  
+  header h1 {
+    font-size: 2em;       /* reduce size if necessary */
+    margin: 0;
+    align-self: start;
+  }
+  
+  
+  header img#profile-pic {
+    max-height: 100px;    /* keep profile pic within header */
+    width: 100%;
+    border-radius: 0%;
+  }
+  
+    
+  
+  
+  header h1 {
+    grid-row: 1;                     /* top row */
+    grid-column: 1;                  /* left column */
+    margin: 0;
+    font-size: 2.5em;
+    align-self: start;  
+                 /* top align in cell */
+  }
+
+  header nav {
+    grid-row: 2;
+    grid-column: 2;
+    align-self: end;
+    justify-self: end;
+    display: flex;              /* Arrange links and button side-by-side */
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin-left: 15px;
+  }
+  .header-title {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .header-title:hover {
+    color: white;                /* keep white on hover too */
+    text-decoration: underline;  /* optional: underline on hover if you like */
+  }
+  
+
+  nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  button#toggle-theme {
+    margin-left: 20px;         /* space between nav links and button */
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    color: #14213d;
+    font-size: 1.2em;          /* bigger icon */
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button#toggle-theme:hover {
+    background-color: #0a295c; /* red when hover */
+    color: white;
+  }
+  
+  body {
+    
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    
+  }
+  
+ 
+  
+  section {
+    padding: 20px;
+    background: rgba(254, 253, 255, 0.936);
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  }
+  
+  h2 {
+    color: #b08bff;
+  }
+  table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+  /* Normal light mode table styles */
+table tr:nth-child(even) {
+  background-color: #faf9ffe0;
+}
+
+table tr:hover {
+  background-color: #ddd;
+}
+
+/* Dark mode table styles */
+.dark-mode table tr:nth-child(even) {
+  background-color: #7129c363;  /* dark gray for stripes */
+}
+
+.dark-mode table tr:hover {
+  background-color: #555;  /* slightly lighter gray on hover */
+}
+
+.dark-mode table th,
+.dark-mode table td {
+  border-color: #aaa;      /* light gray borders instead of black */
+  color: #eee;             /* text inside table cells */
+}
+
+  
+  button#toggle-theme {
+    margin-top: 15px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e2c9ff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button#toggle-theme:hover {
+    background-color: #0c2d66;
+  }
+  
+  .dark-mode {
+    background-color: #54229b;
+    color: #eee;
+  }
+  
+  .dark-mode header {
+    background-color: #000;
+  }
+  
+  .dark-mode nav a {
+    color: #eee;
+  }
+  
+  .dark-mode section {
+    background-color: #1b0c37;
+  }
+  
+  .dark-mode footer {
+    background-color: #000;
+    color: #eee;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  form button {
+    background-color: #14213d;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  form button:hover {
+    background-color: #18337e;
+  }
+  
+  footer {
+    color: #ffffff;  /* white text */
+    background-color: #54229b;  /* optional: dark footer background */
+    padding: 20px;   /* optional: spacing */
+    text-align: center;
+  }
+   
