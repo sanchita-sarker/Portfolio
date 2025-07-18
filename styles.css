@@ -9,12 +9,12 @@ body {
   }
   
   header {
-    display: flex;                    /* flexbox works great for centering content */
+    display: flex;                    
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     padding: 20px;
-    height: 200px;                    /* fixed height for header */
+    height: 200px;                    
     color: rgb(255, 255, 255);
     position: relative;
   
@@ -23,16 +23,16 @@ body {
     background-size: cover;
     overflow: hidden;
   }
-  
+
   header h1 {
-    font-size: 2em;       /* reduce size if necessary */
+    font-size: 2em;       
     margin: 0;
     align-self: start;
   }
   
   
   header img#profile-pic {
-    max-height: 100px;    /* keep profile pic within header */
+    max-height: 100px;    
     width: 100%;
     border-radius: 0%;
   }
@@ -41,12 +41,11 @@ body {
   
   
   header h1 {
-    grid-row: 1;                     /* top row */
-    grid-column: 1;                  /* left column */
+    grid-row: 1;                    
+    grid-column: 1;                  
     margin: 0;
     font-size: 2.5em;
     align-self: start;  
-                 /* top align in cell */
   }
 
   header nav {
@@ -54,7 +53,7 @@ body {
     grid-column: 2;
     align-self: end;
     justify-self: end;
-    display: flex;              /* Arrange links and button side-by-side */
+    display: flex;              
     align-items: center;
   }
   
@@ -74,8 +73,8 @@ body {
   }
   
   .header-title:hover {
-    color: white;                /* keep white on hover too */
-    text-decoration: underline;  /* optional: underline on hover if you like */
+    color: white;               
+    text-decoration: underline; 
   }
   
 
@@ -90,18 +89,18 @@ body {
   }
   
   button#toggle-theme {
-    margin-left: 20px;         /* space between nav links and button */
+    margin-left: 20px;        
     padding: 8px 12px;
     border: none;
     border-radius: 5px;
     color: #14213d;
-    font-size: 1.2em;          /* bigger icon */
+    font-size: 1.2em;         
     cursor: pointer;
     transition: background-color 0.3s;
   }
   
   button#toggle-theme:hover {
-    background-color: #0a295c; /* red when hover */
+    background-color: #0a295c; 
     color: white;
   }
   
@@ -133,7 +132,7 @@ body {
   margin-top: 10px;
 }
 
-  /* Normal light mode table styles */
+
 table tr:nth-child(even) {
   background-color: #faf9ffe0;
 }
@@ -142,21 +141,20 @@ table tr:hover {
   background-color: #ddd;
 }
 
-/* Dark mode table styles */
+
 .dark-mode table tr:nth-child(even) {
-  background-color: #7129c363;  /* dark gray for stripes */
+  background-color: #7129c363;  
 }
 
 .dark-mode table tr:hover {
-  background-color: #555;  /* slightly lighter gray on hover */
+  background-color: #555;  
 }
 
 .dark-mode table th,
 .dark-mode table td {
-  border-color: #aaa;      /* light gray borders instead of black */
-  color: #eee;             /* text inside table cells */
+  border-color: #aaa;      
+  color: #eee;             
 }
-
   
   button#toggle-theme {
     margin-top: 15px;
@@ -173,7 +171,7 @@ table tr:hover {
   }
   
   .dark-mode {
-    background-color: #54229b;
+    background-color: #2e1057;
     color: #eee;
   }
   
@@ -190,7 +188,7 @@ table tr:hover {
   }
   
   .dark-mode footer {
-    background-color: #000;
+    background-color: #15023b;
     color: #eee;
   }
   
@@ -214,10 +212,99 @@ table tr:hover {
     background-color: #18337e;
   }
   
+#stopwatch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  text-align: center;
+}
+
+#display {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: white;
+}
+
+#stopwatch button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #a95eff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#stopwatch button:hover {
+  background-color: #341455;
+}
+.button-group {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+#todo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  text-align: center;
+}
+#todo button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #a95eff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#todo button:hover {
+  background-color: #341455;
+}
+#task-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; 
+  margin-bottom: 20px;
+}
+
+#taskInput {
+  padding: 10px;
+  font-size: 1rem;
+  width: 250px;
+}
+
+#task-form button {
+  padding: 10px 16px;
+  font-size: 1rem;
+  background-color: #a95eff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#task-form button:hover {
+  background-color: #7129c3;
+}
+
   footer {
-    color: #ffffff;  /* white text */
-    background-color: #54229b;  /* optional: dark footer background */
-    padding: 20px;   /* optional: spacing */
+    color: #ffffff;  
+    background-color: #54229b; 
+    padding: 2px;   
     text-align: center;
   }
    
