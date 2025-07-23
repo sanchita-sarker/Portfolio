@@ -9,7 +9,6 @@ const fortunes = [
   "You'll find what you're looking for.",
   "A surprise encounter will delight you.",
   "Believe in yourself today.",
-  "You will meet a loved one soon."
 ];
 
 const fortuneBox = document.getElementById("fortune-box");
